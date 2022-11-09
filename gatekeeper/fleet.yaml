@@ -22,6 +22,7 @@ diff:
     - {"op": "remove", "path":"/webhooks"}
 
 helm:
+  chart: rancher-gatekeeper
   repo: https://charts.rancher.io
   releaseName: rancher-gatekeeper
   version: 100.1.0+up3.7.1
