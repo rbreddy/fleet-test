@@ -2,9 +2,9 @@ kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
   name: fleet-deploy
-  namespace: fleet-default
+  namespace: fleet-local
 spec:
   repo: https://github.com/rbreddy/fleet-test.git
   branch: main
   paths:
-  - fleet
+  - /fleet
