@@ -6,4 +6,4 @@ metadata:
 spec:
   repo: https://github.com/rbreddy/fleet-test.git
   paths:
-  - fleet/
+  - fleet
