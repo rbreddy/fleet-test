@@ -3,7 +3,7 @@ helm:
   releaseName: rancher-gatekeeper-crd
   repo: https://charts.rancher.io
   chart: rancher-gatekeeper-crd
-  version: 102.1.0+up3.12.0
+  version: 104.0.0+up3.13.0
 diff:
   comparePatches:
   - apiVersion: policy/v1beta1
@@ -14,3 +14,6 @@ diff:
     - {"op":"remove", "path":"/spec/hostPID"}
     - {"op":"remove", "path":"/spec/privileged"}
     - {"op":"remove", "path":"/spec/readOnlyRootFilesystem"}  
+  clusterSelector:
+    matchLabels:
+      env: prod
