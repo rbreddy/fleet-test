@@ -25,9 +25,12 @@ helm:
   chart: rancher-gatekeeper
   repo: https://charts.rancher.io
   releaseName: rancher-gatekeeper
-  version: 102.1.0+up3.12.0
+  version: 104.0.0+up3.13.0
   values:
     replicas: 1
     resources:
       requests:
         cpu: 10m
+  clusterSelector:
+    matchLabels:
+      env: prod
